@@ -16,7 +16,7 @@
 
         &::before {
             content: '<h1>';
-            font-family: 'Le Belle Aurore';
+            font: 'Le Belle Aurore';
             color: #ffd700;
             font-size: 18px;
             position: absolute;
@@ -27,7 +27,7 @@
 
         &::after {
          content: '</h1>';   
-         font-family: 'La Belle Aurore';
+         font: 'La Belle Aurore';
          color: #ffd700;
          font-size: 18px;
          position: absolute;
@@ -39,6 +39,7 @@
 
         img {
             width: 32px;
+            margin-left: 20px;
         }
     }
 }
