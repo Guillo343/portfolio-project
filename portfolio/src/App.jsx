@@ -9,9 +9,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />} />
-        <Route path="/" element={<Sidebar />} />
+        {/* <Route path="/" element={<Sidebar />} /> */}
       </Routes>
-        {/* <Sidebar /> */}
     </>
   )
 }
