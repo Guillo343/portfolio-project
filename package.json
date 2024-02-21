@@ -9,6 +9,7 @@
     "animate.css": "^4.1.1",
     "font-awesome": "^4.7.0",
     "gsap": "^3.12.5",
+    "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "react-leaflet": "^4.2.1",
     "react-loaders": "^3.0.1",
