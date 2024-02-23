@@ -3,6 +3,7 @@ import './index.scss'
 import { AnimatedLetters } from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
 export const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -15,7 +16,8 @@ export const About = () => {
   }, []);
 
   return (
-    <div className='container about-page'>
+    <>
+        <div className='container about-page'>
         <div className="text-zone">
             <h1>
                 <AnimatedLetters 
@@ -34,22 +36,24 @@ export const About = () => {
                     <FontAwesomeIcon icon={faAngular} color='#DD0031'/>
                 </div>
                 <div className="face2">
-                    <FontAwesomeIcon icon={faHtml5} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faHtml5} color='#f06529'/>
                 </div>
                 <div className="face3">
-                    <FontAwesomeIcon icon={faCss3} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faCss3} color='#28a4d9'/>
                 </div>
                 <div className="face4">
-                    <FontAwesomeIcon icon={faReact} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faReact} color='#5ed4f4'/>
                 </div>
                 <div className="face5">
-                    <FontAwesomeIcon icon={faJsSquare} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faJsSquare} color='#efd81d'/>
                 </div>
                 <div className="face6">
-                    <FontAwesomeIcon icon={faGitAlt} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faGitAlt} color='#Ec4d28'/>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+        <Loader type='pacman' />
+    </>
   )
 }
